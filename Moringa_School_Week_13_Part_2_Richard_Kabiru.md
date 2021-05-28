@@ -109,12 +109,7 @@ boxplot(ecomm$'SpecialDay')
 
 boxplot.stats(ecomm$'SpecialDay')$out # listing the outliers
 
-# Eliminating the outliers
-#
-outliers <- boxplot(ecomm, plot=FALSE)$out
-ecomm <- ecomm[-which(ecomm %in% outliers),]
 
-dim(ecomm)
 
 ```
 ## Univariate Analysis
